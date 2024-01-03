@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800;900&family=Oswald:wght@300;700&family=Outfit:wght@700&display=swap');
+body{
+    background-color: #f3f3f3;
+}
+h1{
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight:800;
+    font-size: 4rem;
+}
+.container{
+    margin:10rem 0 0 15%;
+}
+.bitmoji{
+    height:25rem;
+    width:25rem;
+    border-radius: 58%;
+}
+.footer{
+    margin:10rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+.col-3{
+    margin-top:1rem;
+}
+.col-4{
+    margin-left: 3rem;
+}
+.content{
+    margin-top:1rem;
+    margin-left: 6rem;
+}
+.circleGroup{
+    display: flex;
+    flex-direction: row;
+    margin-top:2rem;
+}
+.circleContent{
+    height:8rem;
+    width:100rem;
+    margin:0.5rem 1rem;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    cursor: pointer;
+}
+.resumeCircle{
+   background-color: #e6a20d;
+   margin-left: 0;
+}
+.projectsCircle{
+    background-color: #ff3b25;
+}
+.contactCircle{
+    background-color: #80d8da;
+}
+a{
+   color: black;
+}
+.fa-brands{
+    margin:0 3px;
+}
+.footer{
+    border-top: 1px solid black;
+}
+.bitmoji{
+    transition: 0.3s ;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.circleContent:hover{
+    transition: 0.3s;
+    background-color: transparent;
+}
