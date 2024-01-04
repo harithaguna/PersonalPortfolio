@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800;900&family=Oswald:wght@300;700&family=Outfit:wght@700&display=swap');
 body{
     background-color: #f3f3f3;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
     font-family:'Noto Sans JP', sans-serif;
