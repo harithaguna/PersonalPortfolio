@@ -38,8 +38,9 @@
       </form>
     </div>
   </nav>
+  <form action="https://formspree.io/f/moqgvqnj" method="post">
   <div class="contactContainer row ">
-    <div class="col-5">
+    <div class="col-sm-5">
         <h3>Contact</h3>
         <p class="mt-3">Looking Forward to Hear From You.</p>
         <div class="phone">
@@ -51,25 +52,25 @@
             <p class="mt-3"><a href="mailto:harithaguna03@gmail.com">harithaguna03@gmail.com</a></p>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-sm-6">
        <div class="row">
-       <div class="col"> <label for="">
-        FirstName: <input type="text" name="FirstName" id="firstName">
+       <div class="col-sm-6"> <label for="firstName">
+        FirstName: <input type="text" name="FirstName" id="firstName" required>
      </label></div>
-       <div class="col">
-        <label for="">
-          LastName: <input type="text" name="LastName" id="lastName">
+       <div class="col-sm-6">
+        <label for="lastName">
+          LastName: <input type="text" name="LastName" id="lastName" required>
        </label>
        </div>
        </div>
       <div class="row">
-      <div class="col"> <label for="email">
-       Email: <input type="text" name="Email" id="email">
+      <div class="col-sm-6"> <label for="email">
+       Email ID: <input type="text" name="Email" id="email" required>
     </label></div>
-      <div class="col">
+      <div class="col-sm-6">
        <label for="subject">
          Subject:
-         <input type="text" name="subject" id="subject">
+         <input type="text" name="subject" id="subject" required>
       </label>
       </div>
    </div>
@@ -78,32 +79,33 @@
      <label for="message">
        Message:
     </label>
-    <div class="col">
-      <textarea name="message" id="message" cols="25" rows="5"  style="margin: 0;"></textarea>
+    <div class="col" style="margin: 0.1rem; padding-left: 0px;">
+      <textarea name="message" id="message" cols="25" rows="5" class="textarea" required></textarea>
     </div>
     </div>
-    <div class="col">
-      <div class="resumeCircle circleContent"><h4>Submit</h4></div>
+    <div class="col submitGroup">
+      <div class="resumeCircle circleContent"><button type="submit" class="submitButton"><h4>Submit</h4></button></div>
     </div>
     </div>
     </div>
+  </form>
     </div>
-     <div class="footer">
-    <div class="phone col-3">
+     <div class="footer row">
+    <div class="phone col-sm-3">
       <h5>Phone</h5>
      <a href="tel:+">+91 9791276207</a>
     </div>
-    <div class="Email col-3">
+    <div class="Email col-sm-3">
       <h5>Email</h5>
       <a href="mailto:harithaguna03@gmail.com">harithaguna03@gmail.com</a>
     </div>
-    <div class="FollowMe col-3">
+    <div class="FollowMe col-sm-3">
       <h5>Follow Me</h5>
       <a href="https://github.com/harithaguna" target="_blank"><i class="fa-brands fa-xl fa-github"></i></a>
       <a href="https://www.linkedin.com/in/harithaguna/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-      <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="https://www.instagram.com/haritha_gunasekaran"target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
     </div>
-    <div class="copyrights col-3"><p>&copy;2023 CopyRights Reserved</p></div>
+    <div class="copyrights col-sm-3"><p>&copy;2023 CopyRights Reserved</p></div>
   </div>
 </body>
 </html>
