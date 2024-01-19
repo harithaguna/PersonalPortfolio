@@ -9,9 +9,18 @@ h1{
     font-size: 4rem;
 }
 .footer{
-    margin:5rem 0 1rem 0;
+    margin:5rem 0 0 0;
     display: flex;
     flex-direction: row;
+    border-top: 1px solid black;
+    padding-top:1rem;
+    padding-bottom:0.5rem;
+    margin-top: 5rem;
+    background-color: rgb(48, 48, 48);
+    color: #fafafaf3;;
+}
+.footer a{
+    color: white;
 }
 .col-3{
     margin-top:1rem;
@@ -28,11 +37,6 @@ a{
 }
 .fa-brands{
     margin:0 3px;
-}
-.footer{
-    border-top: 1px solid black;
-    padding-top:1rem;
-    margin-top: 5rem;
 }
 .container{
     margin-top: 2rem;
