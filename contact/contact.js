@@ -32,7 +32,7 @@ function submitForm()
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     submitForm();
-    document.querySelector('#contactForm').reset();
+    form.reset();
 })
 form.reset();
 
