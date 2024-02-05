@@ -36,7 +36,7 @@
       </form>
     </div>
   </nav>
-  <form action="https://formspree.io/f/moqgvqnj" method="post">
+  <form id="contactForm">
   <div class="contactContainer row ">
     <div class="col-sm-5">
         <h3>Contact</h3>
@@ -82,7 +82,7 @@
     </div>
     </div>
     <div class="col submitGroup">
-      <div class="resumeCircle circleContent"><button type="submit" class="submitButton"><h4>Submit</h4></button></div>
+      <div class="resumeCircle circleContent"><button type="submit" class="submitButton" onClick="submitForm()"><h4>Submit</h4></button></div>
     </div>
     </div>
     </div>
@@ -105,5 +105,20 @@
     </div>
     <div class="copyrights col-sm-3 mt-2"><h6><i class="fa-solid fa-code mt-2"></i>  Code By Haritha</h6></div>
   </div>
+  <script>
+    function submit()
+    {
+      var fname=document.getElementById("firstName").value;
+      var lname=document.getElementById("lastName").value;
+      var email=document.getElementById("email").value;
+      var subject=document.getElementById("subject").value; 
+      var message=document.getElementById("message").value;
+
+      const mailtoLink = `mailto:harithaguna03@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`First Name: ${fname}\nLast Name: ${lname}\nEmail: ${email}\n\n${message}`)}`;
+
+      window.location.href = mailtoLink;
+
+    }
+  </script>
 </body>
 </html>
