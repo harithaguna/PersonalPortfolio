@@ -32,7 +32,6 @@ function submitForm()
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     submitForm();
-    form.reset();
 })
 form.reset();
 
