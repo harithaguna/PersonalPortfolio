@@ -1,11 +1,12 @@
 var form=document.querySelector('#contactForm');
-  var fname=document.getElementById("firstName").value;
-  var lname=document.getElementById("lastName").value;
-  var email=document.getElementById("email").value;
-  var sub=document.getElementById("subject").value; 
-  var message=document.getElementById("message").value;
 function submitForm()
 {
+    console.log("form Submitted");
+    var fname=document.getElementById("firstName").value;
+    var lname=document.getElementById("lastName").value;
+    var email=document.getElementById("email").value;
+    var sub=document.getElementById("subject").value; 
+    var message=document.getElementById("message").value;
     console.log("Form");
     console.log(subject+"+"+body);   
     const subject=sub;
