@@ -1,7 +1,7 @@
 var form=document.querySelector('#contactForm');
 function submitForm()
 {
-    console.log("form Submitted");
+    console.log("Form Submitted");
     var fname=document.getElementById("firstName").value;
     var lname=document.getElementById("lastName").value;
     var email=document.getElementById("email").value;
