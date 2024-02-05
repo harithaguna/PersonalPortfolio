@@ -1,22 +1,21 @@
 var form=document.querySelector('#contactForm');
+var fname=document.getElementById("firstName").value;
+var lname=document.getElementById("lastName").value;
+var email=document.getElementById("email").value;
+var subject=document.getElementById("subject").value; 
+var message=document.getElementById("message").value;
 function submitForm()
 {
-    console.log("Form Submitted");
-    var fname=document.getElementById("firstName").value;
-    var lname=document.getElementById("lastName").value;
-    var email=document.getElementById("email").value;
-    var sub=document.getElementById("subject").value; 
-    var message=document.getElementById("message").value;
-    const subject=sub;
-    const body=message;
+    const messageContent=`FirstName:${fname}<br>
+                   lastName:${lname}<br>
+                   Email:${email}<br>
+                   Message:${message}`;
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "gunasekarang34539@gmail.com",
-    Password : "7A9DB4EE83B90B27D7C4ABD931A014DB0CF3",
+    SecureToken:"c72ed293-eec3-4c78-898d-3fddc086452c",
     To : 'gunasekarang34539@gmail.com',
-    From : "gunasekarang34539@gmail.com",
+    From :email,
     Subject : subject,
-    Body : body
+    Body : messageContent
 }).then(
   message => {
     if(message=="OK")
@@ -28,7 +27,8 @@ function submitForm()
       });
   }
   }
-);}
+);
+}
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     submitForm();
