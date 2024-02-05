@@ -1,12 +1,13 @@
-var form=document.querySelector('form')
-function submitForm()
-{
- console.log("formSubmission");
+var form=document.querySelector('#contactForm');
   var fname=document.getElementById("firstName").value;
   var lname=document.getElementById("lastName").value;
   var email=document.getElementById("email").value;
-  var subject=document.getElementById("subject").value; 
+  var sub=document.getElementById("subject").value; 
   var message=document.getElementById("message").value;
+function submitForm()
+{
+    const subject=sub;
+    const body=message;
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "gunasekarang34539@gmail.com",
@@ -14,7 +15,7 @@ function submitForm()
     To : 'gunasekarang34539@gmail.com',
     From : "gunasekarang34539@gmail.com",
     Subject : subject,
-    Body : message
+    Body : body
 }).then(
   message => {
     if(message=="OK")
