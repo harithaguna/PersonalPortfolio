@@ -1,6 +1,7 @@
-var form=document.getElementById("contactForm");
+var form=document.querySelector('form')
 function submitForm()
 {
+ console.log("formSubmission");
   var fname=document.getElementById("firstName").value;
   var lname=document.getElementById("lastName").value;
   var email=document.getElementById("email").value;
@@ -30,7 +31,6 @@ function submitForm()
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
     submitForm();
-
 })
 
 }
