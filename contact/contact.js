@@ -7,8 +7,6 @@ function submitForm()
     var email=document.getElementById("email").value;
     var sub=document.getElementById("subject").value; 
     var message=document.getElementById("message").value;
-    console.log("Form");
-    console.log(subject+"+"+body);   
     const subject=sub;
     const body=message;
   Email.send({
