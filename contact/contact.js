@@ -13,7 +13,7 @@ function submitForm()
   Email.send({
     SecureToken:"c72ed293-eec3-4c78-898d-3fddc086452c",
     To : 'gunasekarang34539@gmail.com',
-    From :email,
+    From :'gunasekarang34539@gmail.com',
     Subject : subject,
     Body : messageContent
 }).then(
