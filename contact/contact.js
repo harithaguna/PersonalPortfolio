@@ -6,6 +6,8 @@ var form=document.querySelector('#contactForm');
   var message=document.getElementById("message").value;
 function submitForm()
 {
+    console.log("Form");
+    console.log(subject+"+"+body);   
     const subject=sub;
     const body=message;
   Email.send({
