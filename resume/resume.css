@@ -72,6 +72,7 @@ a{
     border-radius: 5px;
     cursor: pointer;
 }
+
 .skills:hover{
     padding: 3px;
 }
@@ -90,5 +91,18 @@ a{
     }
     .footer{
         margin-top: 0;
+    }
+    .webTechnologies{
+        margin: 0.7rem;
+    }
+    .webSkills{
+        margin-top: 0.4rem;
+    }
+    .mySQL{
+        margin-left:0.8rem;
+        margin-right:0.8rem;
+    }
+    .mongodb{
+        margin: 0.6rem 0.8rem; 
     }
 }
